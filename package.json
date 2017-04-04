@@ -8,7 +8,7 @@
     "build:sass": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
     "build:htmlhint": "htmlhint index.html",
     "build:stylelint": "stylelint source/scss/style.scss",
-    "build:standard": "standard --fix clicky.js",
+    "build:standard": "standard clicky.js",
     "deploy:surge": "surge --project . --domain katie-kg-tgc7noax99ajvzzg.surge.sh",
     "deploy": "run-s build:* deploy:surge"
   },
